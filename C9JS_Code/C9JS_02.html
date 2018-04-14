@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Example</title>
+	<script type="text/javascript">
+	function substitude() {
+		let myValue = document.getElementById		('myTextBox').value;
+		if (myValue.length == 0){
+			alert('Please enter real value');
+			return;
+		}
+		let myTitle = document.getElementById('title');
+		myTitle.innerHTML= myValue;	
+	}
+	</script>
+</head>
+<body>
+	<h1  id="title">JavaScript Example</h1>
+	<input type="text" id="myTextBox"/>
+	<input type="submit" value="click me" onclick="substitude()"/>
+</body>
+</html>
